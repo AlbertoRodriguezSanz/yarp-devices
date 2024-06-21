@@ -26,7 +26,7 @@ bool CuiAbsolute::open(yarp::os::Searchable & config)
 
     const auto * robotConfig = *reinterpret_cast<const yarp::os::Property * const *>(config.find("robotConfig").asBlob());
 
-    yarp::os::Bottle & commonGroup = robotConfig->findGroup("common-cui");
+    yarp::os::Bottle & commonGroup = robotConfig->findGroup("common-aksim-2");
     yarp::os::Property cuiGroup;
 
     if (!commonGroup.isNull())

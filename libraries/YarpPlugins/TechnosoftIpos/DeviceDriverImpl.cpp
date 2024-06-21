@@ -1,5 +1,12 @@
 // -*- mode:C++; tab-width:4; c-basic-offset:4; indent-tabs-mode:nil -*-
 
+
+
+
+//This code is executed previous to enabling the power switch (la seta)
+//All the configuration for the devices found in teo-configuration-files is loaded
+
+
 #include "TechnosoftIposBase.hpp"
 
 #include <functional>

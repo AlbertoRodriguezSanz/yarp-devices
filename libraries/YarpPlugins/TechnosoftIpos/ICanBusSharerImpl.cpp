@@ -1,5 +1,11 @@
 // -*- mode:C++; tab-width:4; c-basic-offset:4; indent-tabs-mode:nil -*-
 
+
+
+// This code is for the execution after the power switch is enabled
+//A first communication with the absolute encoder is performed somewhere below
+
+
 #include "TechnosoftIposBase.hpp"
 
 #include <cctype> // std::isspace
@@ -64,6 +70,8 @@ bool TechnosoftIposBase::registerSender(ICanSenderDelegate * sender)
 
 // -----------------------------------------------------------------------------
 
+
+//this is done after the configuration is carried out and a thread has checked on it
 bool TechnosoftIposBase::initialize()
 {
     if (!can->sdo()->ping())

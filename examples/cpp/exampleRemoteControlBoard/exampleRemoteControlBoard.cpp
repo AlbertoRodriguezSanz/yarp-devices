@@ -62,7 +62,8 @@ int main(int argc, char *argv[])
 
     yarp::os::Property options;
     options.put("device", "remote_controlboard");
-    options.put("remote", "/robot/limb");
+    //options.put("remote", "/robot/limb");//limb needs to be changed to the specific limb you want to operate and robot for the given port to which connect
+    options.put("remote", "/teoSim/rightArm");
     options.put("local", "/local");
 
     yarp::dev::PolyDriver dd(options);
